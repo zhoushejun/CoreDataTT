@@ -23,6 +23,14 @@
 		187631941A45C56F00755551 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 187631921A45C56F00755551 /* InfoPlist.strings */; };
 		187631961A45C56F00755551 /* CoreDataTTTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 187631951A45C56F00755551 /* CoreDataTTTests.m */; };
 		CF08785B1B802E9500BEFE5F /* CDDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CF08785A1B802E9500BEFE5F /* CDDataManager.m */; };
+		CF0878601B80333200BEFE5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF08785F1B80333200BEFE5F /* Main.storyboard */; };
+		CF0878631B80337800BEFE5F /* CDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0878621B80337800BEFE5F /* CDViewController.m */; };
+		CF0878691B8035D900BEFE5F /* UserInfoEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0878681B8035D900BEFE5F /* UserInfoEntity.m */; };
+		CF08786C1B803F4C00BEFE5F /* CDUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = CF08786B1B803F4C00BEFE5F /* CDUserInfo.m */; };
+		CF08786F1B8045EE00BEFE5F /* NSString+RegExAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = CF08786E1B8045EE00BEFE5F /* NSString+RegExAddition.m */; };
+		CF0878721B80467C00BEFE5F /* NSDate+RegexAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0878711B80467C00BEFE5F /* NSDate+RegexAddition.m */; };
+		CF0878781B804E1500BEFE5F /* CDRootTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0878771B804E1500BEFE5F /* CDRootTableViewCell.m */; };
+		CF08787B1B804EE700BEFE5F /* CDRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF08787A1B804EE700BEFE5F /* CDRootViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +64,21 @@
 		187631951A45C56F00755551 /* CoreDataTTTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataTTTests.m; sourceTree = "<group>"; };
 		CF0878591B802E9500BEFE5F /* CDDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDDataManager.h; sourceTree = "<group>"; };
 		CF08785A1B802E9500BEFE5F /* CDDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDDataManager.m; sourceTree = "<group>"; };
+		CF08785F1B80333200BEFE5F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		CF0878611B80337800BEFE5F /* CDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDViewController.h; sourceTree = "<group>"; };
+		CF0878621B80337800BEFE5F /* CDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDViewController.m; sourceTree = "<group>"; };
+		CF0878671B8035D900BEFE5F /* UserInfoEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoEntity.h; sourceTree = "<group>"; };
+		CF0878681B8035D900BEFE5F /* UserInfoEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoEntity.m; sourceTree = "<group>"; };
+		CF08786A1B803F4C00BEFE5F /* CDUserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDUserInfo.h; sourceTree = "<group>"; };
+		CF08786B1B803F4C00BEFE5F /* CDUserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDUserInfo.m; sourceTree = "<group>"; };
+		CF08786D1B8045EE00BEFE5F /* NSString+RegExAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+RegExAddition.h"; sourceTree = "<group>"; };
+		CF08786E1B8045EE00BEFE5F /* NSString+RegExAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+RegExAddition.m"; sourceTree = "<group>"; };
+		CF0878701B80467C00BEFE5F /* NSDate+RegexAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+RegexAddition.h"; sourceTree = "<group>"; };
+		CF0878711B80467C00BEFE5F /* NSDate+RegexAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+RegexAddition.m"; sourceTree = "<group>"; };
+		CF0878761B804E1500BEFE5F /* CDRootTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDRootTableViewCell.h; sourceTree = "<group>"; };
+		CF0878771B804E1500BEFE5F /* CDRootTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDRootTableViewCell.m; sourceTree = "<group>"; };
+		CF0878791B804EE700BEFE5F /* CDRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDRootViewController.h; sourceTree = "<group>"; };
+		CF08787A1B804EE700BEFE5F /* CDRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDRootViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,8 +143,22 @@
 			children = (
 				1876317B1A45C56F00755551 /* AppDelegate.h */,
 				1876317C1A45C56F00755551 /* AppDelegate.m */,
+				CF0878791B804EE700BEFE5F /* CDRootViewController.h */,
+				CF08787A1B804EE700BEFE5F /* CDRootViewController.m */,
+				CF0878611B80337800BEFE5F /* CDViewController.h */,
+				CF0878621B80337800BEFE5F /* CDViewController.m */,
 				CF0878591B802E9500BEFE5F /* CDDataManager.h */,
 				CF08785A1B802E9500BEFE5F /* CDDataManager.m */,
+				CF08786A1B803F4C00BEFE5F /* CDUserInfo.h */,
+				CF08786B1B803F4C00BEFE5F /* CDUserInfo.m */,
+				CF0878761B804E1500BEFE5F /* CDRootTableViewCell.h */,
+				CF0878771B804E1500BEFE5F /* CDRootTableViewCell.m */,
+				CF08786D1B8045EE00BEFE5F /* NSString+RegExAddition.h */,
+				CF08786E1B8045EE00BEFE5F /* NSString+RegExAddition.m */,
+				CF0878701B80467C00BEFE5F /* NSDate+RegexAddition.h */,
+				CF0878711B80467C00BEFE5F /* NSDate+RegexAddition.m */,
+				CF0878671B8035D900BEFE5F /* UserInfoEntity.h */,
+				CF0878681B8035D900BEFE5F /* UserInfoEntity.m */,
 				187631811A45C56F00755551 /* Images.xcassets */,
 				1876317E1A45C56F00755551 /* CoreDataTT.xcdatamodeld */,
 				187631731A45C56F00755551 /* Supporting Files */,
@@ -135,6 +172,7 @@
 				187631741A45C56F00755551 /* CoreDataTT-Info.plist */,
 				187631751A45C56F00755551 /* InfoPlist.strings */,
 				187631781A45C56F00755551 /* main.m */,
+				CF08785F1B80333200BEFE5F /* Main.storyboard */,
 				1876317A1A45C56F00755551 /* CoreDataTT-Prefix.pch */,
 			);
 			name = "Supporting Files";
@@ -202,7 +240,7 @@
 		1876315F1A45C56F00755551 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = shejun.zhou;
 				TargetAttributes = {
 					187631861A45C56F00755551 = {
@@ -235,6 +273,7 @@
 			files = (
 				187631771A45C56F00755551 /* InfoPlist.strings in Resources */,
 				187631821A45C56F00755551 /* Images.xcassets in Resources */,
+				CF0878601B80333200BEFE5F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,7 +295,14 @@
 				1876317D1A45C56F00755551 /* AppDelegate.m in Sources */,
 				187631801A45C56F00755551 /* CoreDataTT.xcdatamodeld in Sources */,
 				CF08785B1B802E9500BEFE5F /* CDDataManager.m in Sources */,
+				CF0878781B804E1500BEFE5F /* CDRootTableViewCell.m in Sources */,
 				187631791A45C56F00755551 /* main.m in Sources */,
+				CF0878631B80337800BEFE5F /* CDViewController.m in Sources */,
+				CF0878721B80467C00BEFE5F /* NSDate+RegexAddition.m in Sources */,
+				CF08786F1B8045EE00BEFE5F /* NSString+RegExAddition.m in Sources */,
+				CF0878691B8035D900BEFE5F /* UserInfoEntity.m in Sources */,
+				CF08786C1B803F4C00BEFE5F /* CDUserInfo.m in Sources */,
+				CF08787B1B804EE700BEFE5F /* CDRootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,6 +362,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -376,6 +423,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CoreDataTT/CoreDataTT-Prefix.pch";
 				INFOPLIST_FILE = "CoreDataTT/CoreDataTT-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "http---965678322.blog.51cto.com.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -389,6 +437,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CoreDataTT/CoreDataTT-Prefix.pch";
 				INFOPLIST_FILE = "CoreDataTT/CoreDataTT-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "http---965678322.blog.51cto.com.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -410,6 +459,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "CoreDataTTTests/CoreDataTTTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "http---965678322.blog.51cto.com.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -428,6 +478,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CoreDataTT/CoreDataTT-Prefix.pch";
 				INFOPLIST_FILE = "CoreDataTTTests/CoreDataTTTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "http---965678322.blog.51cto.com.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;

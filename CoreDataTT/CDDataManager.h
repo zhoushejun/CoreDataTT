@@ -14,6 +14,8 @@
  */
 #import <Foundation/Foundation.h>
 
+@class CDUserInfo;
+
 /**
  @class     CDDataManager
  @abstract  数据库乍管理者
@@ -28,5 +30,9 @@
 
 - (void)saveContext;
 - (NSURL *)applicationDocumentsDirectory;
+
+
+- (BOOL)addUserInfoEntityWithUserInfo:(CDUserInfo *)userInfo;
+- (NSArray *)readUserInfoEntityData;
 
 @end

@@ -7,6 +7,8 @@
 //
 
 #import "CDDataManager.h"
+#import "UserInfoEntity.h"
+#import "CDUserInfo.h"
 
 @implementation CDDataManager
 
@@ -118,6 +120,62 @@
 - (NSURL *)applicationDocumentsDirectory
 {
     return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
+}
+
+
+#pragma mark - My mythod
+
+- (BOOL)addUserInfoEntityWithUserInfo:(CDUserInfo *)userInfo {
+    /*
+    NSAssert([[dic allKeys] containsObject:@"name"],    @"dic should contain name property");
+    NSAssert([[dic allKeys] containsObject:@"gender"],  @"dic should contain gender property");
+    NSAssert([[dic allKeys] containsObject:@"age"],     @"dic should contain age property");
+    NSAssert([[dic allKeys] containsObject:@"cid"],     @"dic should contain cid property");
+    NSAssert([[dic allKeys] containsObject:@"birthday"],@"dic should contain birthday property");
+    NSAssert([[dic allKeys] containsObject:@"height"],  @"dic should contain height property");
+    NSAssert([[dic allKeys] containsObject:@"weight"],  @"dic should contain weight property");
+    */
+    UserInfoEntity *userInfoEntity = [NSEntityDescription insertNewObjectForEntityForName:@"UserInfoEntity" inManagedObjectContext:self.managedObjectContext];
+        userInfoEntity.name = userInfo.name;
+        userInfoEntity.gender = userInfo.gender;
+        userInfoEntity.age = userInfo.age;
+        userInfoEntity.cid = userInfo.cid;
+        userInfoEntity.birthday = userInfo.birthday;
+        userInfoEntity.height = userInfo.height;
+        userInfoEntity.weight = userInfo.weight;
+    
+    NSError *error = nil;
+    if (![self.managedObjectContext save:&error]) {
+        NSLog(@"error:%@", error.description);
+        return NO;
+    }
+    return YES;
+}
+
+- (NSArray *)readUserInfoEntityData {
+    NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"UserInfoEntity"];    //获取请求对象
+    NSSortDescriptor *ageSort = [NSSortDescriptor sortDescriptorWithKey:@"age" ascending:NO];   //降序
+    request.sortDescriptors = @[ageSort];
+    NSError *error = nil;
+    NSMutableArray *listData = [NSMutableArray arrayWithCapacity:10];
+    NSArray *users = [self.managedObjectContext executeFetchRequest:request error:&error];
+    if (error) {
+        NSLog(@"error:%@", error.description);
+        return nil;
+    }
+    for (UserInfoEntity *userInfoEntity in users) {
+        CDUserInfo *userInfo = [[CDUserInfo alloc] init];
+        userInfo.name = userInfoEntity.name;
+        userInfo.gender = userInfoEntity.gender;
+        userInfo.age = userInfoEntity.age;
+        userInfo.cid = userInfoEntity.cid;
+        userInfo.birthday = userInfoEntity.birthday;
+        userInfo.height = userInfoEntity.height;
+        userInfo.weight = userInfoEntity.weight;
+        [listData addObject:userInfo];
+    }
+    
+    return listData;
 }
 
 @end
