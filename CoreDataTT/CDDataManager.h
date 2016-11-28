@@ -18,7 +18,7 @@
 
 /**
  @class     CDDataManager
- @abstract  数据库乍管理者
+ @abstract  数据库管理者
  */
 @interface CDDataManager : NSObject
 
